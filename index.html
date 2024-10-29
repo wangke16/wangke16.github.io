@@ -1,10 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Wang, Ke</title>
-</head>
+<html>
+<title>Wang, Ke</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+</style>
 <body>
-    <p>tenure-tracked PI, PhD<p>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-opacity w3-orange w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+     <a href="#about" class="w3-bar-item-left w3-button w3-padding-large w3-hide-small" style="float:left">Research</a>
+    <a href="#tools" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Tools</a>
+    <a href="#people" class="w3-bar-item w3-button w3-padding-large w3-hide-small">People</a>
+    <a href="#publications" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Publications</a>
+       <!-- <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="resources">Resources <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#SNA" class="w3-bar-item w3-button">Social Network Analysis</a>
+        <a href="#R" class="w3-bar-item w3-button">R tricks</a>
+        <a href="#DS" class="w3-bar-item w3-button">Data science</a>
+      </div>
+    </div> -->
+    <a href="#public" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Public Outreach</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-orange w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large">Introduction</a>
+  <a href="#tools" class="w3-bar-item w3-button w3-padding-large">Tools</a>
+  <a href="#people" class="w3-bar-item w3-button w3-padding-large">People</a>
+  <a href="#publications" class="w3-bar-item w3-button w3-padding-large">Publications</a>
+  <a href="#public" class="w3-bar-item w3-button w3-padding-large">Public Outreach</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+</div>
+
+<head>
+  <meta charset="UTF-8">
+  <title>W3Cschool</title>
+  <style>
+    div{
+      position: relative;
+    }
+    h1{font-size: 32px; color: black; position:absolute; top:25px; left:300px;}
+    h2{font-size: 32px; color: black; position:absolute; top:65px; left:500px;}
+
+  </style>
+</head>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Header image -->
+  <div class="w3-display-container w3-center">
+    <div class="w3-row">
+      <div class="image-container">  
+          <img src="./images/0bg.jpg" style="width:100%">
+          <h1>Welcome to Ke's Lab</h1>
+          <h2>We study paleogenomics and evolution!</h2>
+      </div>  
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-content w3-center w3-sand w3-padding-24" style="max-width:800px" id="about">
+
+    <h3 class="w3-wide w3-left">Lab Overview</h3><br><br>
+    <p class="w3-justify"> We are a research group (Led by Dr. Ke Wang) interested on the evolutionary history of human from the perspective of paleogenomics, bioinformatics, and population genetics.</p>
+    <p class="w3-justify"> The inhabitation of modern <i>Homo Sapiens</i> on our planet has a long history over 100,000 years, who have left numerous traces of skeletons, created objects (such as lithics, metal artifacts) as well as consequent local ecological changes. 
+        Via archaeological excavations of human skeleton remians, scientists are able to reveal the distribution of human fossils together with their associated objects buried along that constitutes a critical feature of their archaeological cultural label.
+        In the last decades, the successful retrivial of ancient DNA from human remains dated to the last 10,000 years has revolutionaized our understanding on the settlement and peopling history of modern <i>Homo Sapiens</i>. 
+        Paleogenomics, compared to modern genomics, has resolved many key population history questions in a much more direct way. It meanwhile allows direct comparison between genetic evidence, and archaeological cultural hypotheses, sometimes, even linguistic theories.</p>
+    <p class="w3-justify"> While when the time scope of research question is beyond the capability of ancient DNA (too old to be recovered), the bioinfomatic methods based on the currently available data for estimating population evolutionary events become indispensible. 
+      The development of new bioinfomatic tools for population history analyses replies heavily on the mathmatical framework established in theoretical population genetics and evolutonary biology. One of the classic framework is <b>coalescent theory</b>, which is the theoretical basis of our developed tool (MSMC-IM).
+      Another widely recognised framework is site-frequency spectrum, which, compared to coalescent theory, would benefit from larger sample size (for more accurate frequency estimates, intuitively). 
+      We hope to leverage pros and cons from both framworks to achieve more accurate estimates on the past human evolutionary history.
+    <h3 class="w3-wide w3-left">Research Interests</h3><br><br>
+    
+    <div class="w3-row">
+        <div class="w3-third">
+            <img src="./images/a_1.jpg" class="w3-round" alt="cly" style="width:75%;height:auto;max-width:200px"><br><br>
+        </div>
+        <div class="w3-twothird">
+            <h4 class="w3-medium w3-left"> <b><i>Paleogenomics</i></b></h4><br><br>
+            <div class="w3 w3-left"> We carry out ancient DNA studies based on the clean lab facilities and computing resouces at the School of Life Sciences Fudan University, Shanghai, to investigate questions on human origins, population interactions and migrations across continent. </div>
+            <div class="w3 w3-left"> Using ancient DNA, we are interested into reconstructing population interaction history in the past 10,000 years, during which period human activity started dominating the planet and farming societies emerge globally. </div>
+        </div>  
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-twothird w3-right">
+             <img src="./images/a_2.jpg" class="w3-round" alt="cly" style="width:95%;height:auto;max-width:350px"><br><br>
+        </div>
+        <div class="w3-third">
+             <h4 class="w3-medium w3-left"> <b><i>Bioinformatic methods development</i></b></h4>
+             <div class="w3 w3-left"> We also work on developing new bioinformatic tools for genomic analyses, to address questions in human evolution that is hard to answer when archaeological human remains or remained ancient DNA is unavailable.<br><br></div>
+        </div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-half w3-left">
+          <img src="./images/a_3.png" class="w3-round" alt="cly" style="width:95%;height:auto;max-width:450px"><br><br>
+      </div>
+      <div class="w3-half">
+          <h4 class="w3-medium w3-left"> <b><i>Intergrating genetics, archaeology and languagues</i></b></h4><br><br>
+          <div class="w3 w3-left"> We aim to utilize genetic evidence, to shed new insights into the long-lasting archaeological hypotheses and linguistic debates in human evolution. </div>
+      </div>  
+  </div>
+
+  <!-- Tools section -->
+  <div class="w3-content w3-opacity w3-orange w3-padding-24" style="max-width:800px" id="tools">
+    <h3 class="w3-wide w3-left">Tools</h3><br><br>
+    <p class="w3-justify">
+    	Developed bioinformatic tool for inferring migration rate and effective population size across populations available at:  <a href="https://github.com/wangke16" >MSMC-IM</a>.
+    </p>
+  </div>
+
+  <!-- People section -->
+  <div class="w3-content w3-sand w3-padding-24" style="max-width:800px" id="people">
+    <h3 class="w3-wide w3-left">People</h3><br><br>
+    <div class="w3-row">
+      <div class="w3-third">
+        <img src="./images/1wk.jpg" class="w3-round" alt="wk" style="width:95%;height:auto;max-width:300px"><br><br><br><br>
+      </div>
+      <div class="w3-twothird">
+        <h3 class="w3 w3-left">Principal Investigator</h3><br><br></p>
+        <h3 class="w3 w3-left">Wang, Ke 王轲 (Ph.D) </h3><br><br></p>
+        <div class="w3-medium">
+            Ke started her faculty position at Fudan University since 2022. Before that, she obtained her PhD at Max Planck Institute for the Science of Human history (Department of Archaeogenetics, 2016-2020), followed by Postdoc training at the Max Planck Institute for Evolutionary Anthropology (since Department of Archaeogenetics moved there from 2020, 2020-2022). For her Ph.D dessertation, she won the Dieter Ramper Prize of Max Planck Institute at 2021. Ke is currently supported by the Shanghai Rising star scientist program, and by the National Natural Science Foudation of China Grant.<br>
+        </div>
+      </div>
+      <div class="w3-row">
+        <div class="w3-third">
+          <img src="./images/2yz.jpg" class="w3-round" alt="yz" style="width:95%;height:auto;max-width:280px"><br><br><br><br>
+        </div>
+        <div class="w3-medium">
+          <h3 class="w3 w3-left">PhD student: Yin, Zi 殷姿 </h3><br><br></p>
+          <p class="w3-medium">
+            Zi received her Bachelor of Science degree from Tianjin Medical University in 2020 and her Master of Medicine degree from Shanghai Jiao Tong University School of Medicine in 2023. She is currently pursuing a PhD degree in the Department of Human Genetics and Anthropology, School of Life Sciences, Fudan University. She is mainly involved in the construction of whole genome libraries and data analyses. Her research focuses on the genetic structure and gene exchange of populations, and explores the history of population exchange and change.
+          </p>
+        </div>
+      </div>
+        <div class="w3-row">
+          <div class="w3-third">
+            <img src="./images/3shx.jpeg" class="w3-round" alt="shx" style="width:95%;height:auto;max-width:300px"><br><br><br><br>
+          </div>
+          <div class="w3-medium">
+            <h3 class="w3 w3-left">PhD student: Sun, Hengxi 孙恒玺</h3><br><br></p>
+            <p class="w3-medium">
+              I received my Master's degree in Biology and Medicine from Northwest A&F University and am currently pursuing a PhD in Biology at Fudan University. My research is centered on the evolutionary analysis of ancient microorganisms, employing advanced sequencing technologies to uncover insights into microbial adaptations into human activities over time.
+            </p>
+          </div>
+        </div>
+        <div class="w3-row">
+          <div class="w3-third">
+            <img src="./images/3gy.jpg" class="w3-round" alt="gy" style="width:95%;height:auto;max-width:300px"><br><br><br><br>
+          </div>
+          <div class="w3-medium">
+            <h3 class="w3 w3-left">PhD student: Gao, Yan 高焱</h3><br><br></p>
+            <p class="w3-medium">
+              Yan Gao is a doctoral student at Fudan University. He received his Bachelor's degree from Zhejiang Ocean University in 2021 and his Master's degree from Shantou University in 2024. In recent years, Yan has primarily focused on understanding the molecular mechanisms of adaptive evolution in marine organisms, such as fish and crabs, as well as their population genetic structures. Currently, his research interest is dedicated to integrating ancient DNA data with modern genomic data to explore the spatiotemporal changes of ancient human populations and their adaptive evolutionary mechanisms.
+            </p>
+          </div>
+        </div>
+        <div class="w3-row">
+          <div class="w3-third">
+            <img src="./images/4qym.jpg" class="w3-round" alt="qym" style="width:95%;height:auto;max-width:300px"><br><br><br><br>
+          </div>
+          <div class="w3-medium">
+            <h3 class="w3 w3-left">Master student: Qi, Yimeng 齐艺萌</h3><br><br></p>
+            <p class="w3-medium">
+              I am currently pursuing my Master's degree in Biology and Medicine at Fudan University, studying population genetics and human history in Central and East Asia. Prior to this, I worked as an immunological detection researcher at IVC Company after receiving my Bachelor's degree in Biotechnology from Nanchang University (2021). My research interests lie in understanding human population history through an interdisciplinary approach, combining evidence from population genetics, archaeological findings, and paleoclimatic records. Currently, I focus on reconstructing migration patterns and demographic history across the Asian continent, using ancient DNA data to investigate historical population dynamics and social structures.
+            </p>
+          </div>
+        </div>
+        <div class="w3-row">
+          <div class="w3-third">
+            <img src="./images/5zcc2.jpg" class="w3-round" alt="zcc" style="width:95%;height:auto;max-width:300px"><br><br><br><br>
+          </div>
+          <div class="w3-medium">
+            <h3 class="w3 w3-left">Master student: Zhang, Chengcheng 张骋骋</h3><br><br></p>
+            <p class="w3-medium">
+              Chengcheng is a master student of the School of Life Sciences at Fudan University. She is from Tai'an, Shandong Province. She graduated from the School of Life Sciences at Jilin University, and joined the laboratory in September 2024. She participated in iGEM during my undergraduate studies and conducted research on acute myeloid leukemia with basic knowledge in molecular and cell experiments. She likes citywalks, swimming, and cat petting.
+            </p>
+          </div>
+        </div>
+        <div class="w3-row">
+          <div class="w3-third">
+            <img src="./images/6cly.jpeg" class="w3-round" alt="cly" style="width:95%;height:auto;max-width:300px"><br><br><br><br>
+          </div>
+          <div class="w3-medium">
+            <h3 class="w3 w3-left">Bachelor student: Chen, Lingyu 陈泠妤</h3><br><br></p>
+            <p class="w3-medium">
+              A curious student majoring in biology, who wants to learn and study anthropology through both evolutionary biology and cultural sociology.
+            </p>
+          </div>
+        </div>
+
+  </div>
+
+  <!-- The Publication Section -->
+  <div class="w3-opacity w3-orange w3-padding-24" style="max-width:800px" id="publications">
+
+    <h3 class="w3-wide w3-left">Publications(selected)</h3><br><br>
+      <p class="w3-justify">
+      <u><b>Wang, K.</b></u>, Prüfer, K.,Krause-Kyora, B.,et al. (2023) High-coverage genome of the Tyrolean Iceman reveals unusually high Anatolian farmer ancestry. <i>Cell Genomics</i> 3(9) (Cover Page)<br><br>
+      <u><b>Wang, K.</b></u>* Yu, H., Radzeviciute, R. et al. (2023) Middle Holocene Siberian genomes reveal highly connected gene pools throughout North Asia. <i>Current Biology</i> 33(3): 423-433 (* correspondence).<br><br>
+      Naegele, K., Rivollat, M., Yu, H., <u><b>Wang, K</b></u>.(2022) Ancient genomic research – From broad strokes to nuanced reconstructions of the past. <i>Journal of Anthropological Sciences 100</i>.<br><br>
+      Jeong, C. +, <u><b>Wang, K.</b></u>+, Wilkin, S., Taylor, W. T. T., et al (2020) A dynamic 6,000-year genetic history of Eurasia’s Eastern Steppe. <i>Cell</i>, 2020;183: 890–904.e29. (+equal contribution)<br><br>
+      <u><b>Wang, K.</b></u>+, Goldstein, S.+, Bleasdale, M., et al (2020). Ancient genomes reveal complex patterns of population movement, interaction and replacement in sub-Saharan Africa. <i>Science Advances</i>, 2020;6: eaaz0183. (+equal contribution)<br><br>
+      Schiffels, S., <u><b>Wang, K</b></u>. (2020) MSMC and MSMC2: The Multiple Sequentially Markovian Coalescent. In: Dutheil J. (eds) Statistical Population Genomics. <i>Methods in Molecular Biology</i>, vol 2090. Humana, New York, NY <br><br>
+      <u><b>Wang, K.</b></u>, Mathieson, I., O’Connell, J., Schiffels, S. (2020) Tracking human population structure through time from whole genome sequences. <i>PLoS Genetics</i> 16(3): e1008552.<br><br>
+    </p>
+  </div>
+
+  <!-- The Public Outreach Section -->
+  <div class="w3-content w3-sand w3-padding-24" style="max-width:800px" id="public">
+    <h3 class="w3-wide w3-left">Public Outreach (updating)</h3><br><br>
+    <p class="w3-opacity w3-justify"> 2024 </p>
+      <p class="w3-justify"> Talk "Ancient DNA reveals the genetic ancestry, family pedigree and phenotypes of ancient Eurasian populations", October, Haikou, China </p>
+  </div>
+
+<!-- End Page Content -->
+<!-- Footer --> 
+<footer class="w3-padding-24 w3-center w3-opacity w3-orange w3-xlarge" style="max-width:2000px;margin-top:0px" id="contact">
+  <h3 class="w3-wide w3-left">Contact</h3><br><br>
+  <div class="w3-center w3-large">
+    </p> <i class="fa fa-envelope" style="width:30px"> </i>Email: ke_wang@fudan.edu.cn </p>
+    </p> <i class="fa fa-university" style="width:30px"> </i>Address: School of Life Sciences Fudan Unverversity</p>
+    </p> 2005 Songhu Road, Shanghai 200438 </p>
+  </div>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
 </body>
 </html>
-
